@@ -35,6 +35,11 @@ const Menu = ({history}) => (
             {isAuthenticated() && (
                 <>
                     <li className="nav-item">
+                        <Link to={`/findpeople`} style={isActive(history, `/findpeople`)} className="nav-link">
+                            Find People
+                        </Link>
+                    </li>
+                    <li className="nav-item">
                         <span className="nav-link"
                            style={(isActive(history,"/signup"),
                                {cursor: "pointer", color:"#fff"})
